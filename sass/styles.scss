@@ -1,0 +1,59 @@
+body 
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:100%;
+
+}
+
+a 
+{
+    text-decoration: none;
+    color:#000;
+    &:hover 
+    {
+        text-decoration: none;
+    }
+
+}
+
+.content
+{
+    display:flex;
+    justify-content: flex-start;
+    .book-component__book-item
+    {
+        flex-grow:0;
+        height:auto;
+        max-width:200px;
+        padding:20px 10px 0 10px;
+        &:first-child { padding-left:0; }
+        &:last-child { padding-right:0; }
+        .book__wrapper
+        {
+            
+            .book__image
+            {
+                img 
+                {
+                    width:100%;
+                    
+                }
+            }
+            .book__content
+            {
+                    .book__title
+                    {
+                        font-size:17px;
+                        margin:0;
+                        padding:10px 0 4px 0;
+                        font-weight:bold;
+                    }
+                    .book__author
+                    {
+                        font-size:14px;
+                    }
+
+            }
+        }
+    }
+}
